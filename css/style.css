@@ -315,6 +315,12 @@ h2, .h2 {
   font-family: 'Spartan', sans-serif !important;
 }
 
+@media (max-width: 800px) {
+  h2, .h2 {
+    font-size: 2rem !important; 
+  }
+}
+
 h3, .h3 {
   font-size: 1.75rem; }
 
@@ -5039,7 +5045,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #303745 !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -8489,7 +8495,7 @@ h3.vr {
   max-width: 1210px; }
 
 .bg-light {
-  background: #01b7ff31 !important; }
+  background: #303745 !important; }
 
 .bg-primary {
   background: #01b7ff; }
@@ -8549,6 +8555,15 @@ h3.vr {
     position: relative;
     z-index: 0; }
    
+    @media (max-width: 1200px) {
+      .services-wrap {
+        margin-top: 30px;
+      }
+      .services-wrap p{
+        text-align: left;
+      }
+    }
+    
     .services-wrap.img:after, .services-wrap.img:before {
       position: absolute;
       top: 50px;
@@ -8707,6 +8722,10 @@ textarea.form-control {
   .media-custom .media-body .position {
     font-size: 13px;
     color: #d9d9d9; }
+
+  .about-author .desc p {
+    color: #fff; 
+  font-size: 16px;}
 
 .about-author .desc h3 {
   font-size: 24px; }
@@ -9074,6 +9093,11 @@ textarea.form-control {
   margin-bottom: -5px;
 }
 
+
+.mobile-main .mb-2 {
+  color: #000 !important;
+} 
+
 @media (min-width: 800px) {
   .mobile-main  {
     display: none; 
@@ -9382,7 +9406,7 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #ffffff;
+      color: #000000;
       text-align: center;
       display: inline-block;
       width: 40px;
@@ -9545,6 +9569,7 @@ textarea.form-control {
 
 .sidebar-box {
   margin-bottom: 30px;
+  color: #fff;
   padding: 25px;
   font-size: 15px;
   width: 100%;
