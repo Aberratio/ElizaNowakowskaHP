@@ -8055,6 +8055,11 @@ h1, h2, h3, h4, h5,
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 780px !important; }
 
+
+.web-main .subheading {
+  color: #01b7ff !important;
+}
+
 .slider-text {
   position: relative;
   height: 780px; }
@@ -8430,7 +8435,8 @@ h3.vr {
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
-  .pricing-entry p .price {
+  .pricing-entry .price {
+    margin-bottom: -10px !important;
     font-weight: 900;
     font-size: 28px;
     color: #01b7ff;
@@ -8478,7 +8484,7 @@ h3.vr {
       background: #01b7ff !important;
       border: 2px solid #01b7ff!important;
       color: #fff !important; }
-    .pricing-entry:hover .price, .pricing-entry:focus .price {
+    .pricing-entry .price, .pricing-entry .price {
       color: #01b7ff }
     .pricing-entry:hover h3, .pricing-entry:focus h3 {
       color: #01b7ff }
@@ -8487,6 +8493,12 @@ h3.vr {
       background: #01b7ff; }
     .pricing-entry:hover {
       border-color: #01b7ff !important;
+    }
+
+    .netto {
+      color: #01b7ff;
+      font-size: 12px !important; 
+      font-weight: 900;
     }
       
 
@@ -8548,6 +8560,18 @@ h3.vr {
         border: 1px solid transparent;
         background: #000000 !important;
         color: #fff; }
+
+.services-2 {
+  background-color: #303745;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.services-1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
 
 .services-wrap {
   padding-left: 200px;
@@ -8733,12 +8757,12 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
-  padding: 7em 0;
+  padding: 5em 0;
   background-color: rgb(255, 255, 255);
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      padding: 4em 0; } }
 
 .ftco-no-pt {
   padding-top: 0 !important; }
@@ -9355,7 +9379,7 @@ textarea.form-control {
       .blog-entry .text .heading a {
         color: #01b7ff; }
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
-          color: #fff; }
+          color: #303745; }
   .blog-entry .meta > div {
     display: inline-block;
     margin-right: 5px;
