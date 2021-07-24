@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <title>Eliza Nowakowska - Wirtualna Asystentka</title>
     <meta charset="utf-8" />
@@ -33,8 +33,10 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css?v=20" />
-  <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=22" />
+    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/logo.png" />
 </head>
   <body>
     <nav
@@ -84,46 +86,53 @@
     </nav>
     <!-- END nav -->
 
-   <!-- CONTACT SECTION-->
-	<section class="ftco-section ftco-booking">
+	<!-- CONTACT SECTION-->
+	<section class="ftco-section ftco-booking mb-5 mt-5">
 		<div class="container ftco-relative">
 			<div class="row justify-content-center pb-3">
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<span class="subheading-light">Kontakt</span>
 					<h2 class="mb-4">Napisz do mnie</h2>
-					<p>Nie budujmy między sobą niepotrzebnych barier! </br> Nazywam się Eliza i będzie mi niezmiernie miło, jak będziesz zwracał się do mnie po imieniu.</p>
+					<p>Nie budujmy między sobą niepotrzebnych barier! </br> Nazywam się Eliza i będzie mi niezmiernie
+						miło, jak będziesz zwracał się do mnie po imieniu.
+					</p>
 				</div>
+			</div>
+			<div class="row justify-content-center send-form-status">
+				<div id="send_form_status" class="text-center"></div>
 			</div>
 			<h3 class="vr">kontakt@elizanowakowska.com</h3>
 			<div class="row justify-content-center">
 				<div class="col-md-10 ftco-animate">
-					<form action="#" class="appointment-form">
+					<form method="post" action="send_form.php" class="contact_form" id="contact_form">
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<input type="text" class="form-control" id="appointment_name" placeholder="Imię">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Imię">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<input type="text" class="form-control" id="appointment_email" placeholder="Email">
+									<input type="text" class="form-control" id="email" name="email" placeholder="Email">
 								</div>
 							</div>
 							<div class="col-md-12">
 								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="7" class="form-control"
+									<textarea name="message" id="message" cols="30" rows="7" class="form-control"
 										placeholder="Wiadomość"></textarea>
 								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-sm-12">
-								<i class="mt-2 small">Wyrażam zgodę na przetwarzanie moich danych osobowych
-									podanych w formularzu kontaktowym zgodnie z 
-									<a href="policy.html">polityką prywatności</a>.</i>
+								<i class="mt-2 small">
+									Wyrażam zgodę na przetwarzanie moich danych osobowych
+									podanych w formularzu kontaktowym zgodnie z
+									<a href="policy.html">polityką prywatności</a>.
+								</i>
 							</div>
 						</div>
-						<div class="form-group">
+						<div class="form-group mt-3">
 							<p class="button text-center">
 								<input type="submit" value="Wyślij wiadomość" class="btn btn-primary px-4 py-3">
 							</p>
@@ -263,5 +272,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+    <script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/emailSender.js"></script>
   </body>
 </html>
