@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <title>Eliza Nowakowska - Wirtualna Asystentka</title>
+    <title>Eliza Nowakowska - Blog - Strona 1</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css?v=22" />
+    <link rel="stylesheet" href="css/style.css?v=24" />
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/logo.png" />
@@ -50,7 +50,12 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">Eliza Nowakowska</a>
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="nav-logo"
+          />Eliza Nowakowska</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -87,13 +92,16 @@
     <!-- END nav -->
 
     <section class="ftco-section ftco-degree-bg">
+      <div class="heading-section mb-4 mt-2 text-center">
+        <h1 class="mb-4">Blog <p hidden> - 1 / 2</p></h1>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 ftco-animate mb-2">
             <div class="row">
               <!-- POST 8 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post8.html"
                     class="block-20"
@@ -106,7 +114,7 @@
                       <div>Eliza Nowakowska</div>
                     </div>
                     <h3 class="heading">
-                      <a href="blog/post8.html">Jak budować relacje?</a>
+                      <a href="blog/post8.html" itemprop="headline">Jak budować relacje?</a>
                     </h3>
                     <p>
                       Jak budować relacje? Relacja to czynność, którą wykonujemy
@@ -120,7 +128,7 @@
 
               <!-- POST 7 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post7.html"
                     class="block-20"
@@ -134,7 +142,7 @@
                     </div>
                     <h3 class="heading">
                       <a href="blog/post7.html"
-                        >3 Rzeczy, które każdy nastolatek musi wiedzieć!</a
+                      itemprop="headline">3 Rzeczy, które każdy nastolatek musi wiedzieć!</a
                       >
                     </h3>
                     <p>
@@ -149,7 +157,7 @@
 
               <!-- POST 6 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post6.html"
                     class="block-20"
@@ -163,7 +171,7 @@
                     </div>
                     <h3 class="heading">
                       <a href="blog/post6.html"
-                        >Co witamina D3 ma wspólnego z finansami?</a
+                      itemprop="headline">Co witamina D3 ma wspólnego z finansami?</a
                       >
                     </h3>
                     <p>
@@ -178,7 +186,7 @@
 
               <!-- POST 5 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post5.html"
                     class="block-20"
@@ -192,7 +200,7 @@
                     </div>
                     <h3 class="heading">
                       <a href="blog/post5.html"
-                        >Co warto robić podczas koronawirusa?</a
+                      itemprop="headline">Co warto robić podczas koronawirusa?</a
                       >
                     </h3>
                     <p>
@@ -207,7 +215,7 @@
 
               <!-- POST 4 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post4.html"
                     class="block-20"
@@ -220,7 +228,7 @@
                       <div>Eliza Nowakowska</div>
                     </div>
                     <h3 class="heading">
-                      <a href="blog/post4.html">Buduj swoją markę osobistą</a>
+                      <a href="blog/post4.html" itemprop="headline">Buduj swoją markę osobistą</a>
                     </h3>
                     <p>
                       Faktem jest, że każdy z nas buduje swoją markę osobistą.
@@ -400,8 +408,6 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

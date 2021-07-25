@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <title>Eliza Nowakowska - Wirtualna Asystentka</title>
+    <title>Eliza Nowakowska - Blog - Strona 2</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -33,7 +33,7 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css?v=22" />
+    <link rel="stylesheet" href="css/style.css?v=24" />
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/logo.png" />
@@ -50,7 +50,12 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">Eliza Nowakowska</a>
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="Logo"
+            class="nav-logo"
+          />Eliza Nowakowska</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -87,6 +92,9 @@
     <!-- END nav -->
 
     <section class="ftco-section ftco-degree-bg">
+      <div class="heading-section mb-4 mt-2 text-center">
+        <h1 class="mb-4">Blog <p hidden> - 2 / 2</p></h1>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 ftco-animate mb-2">
@@ -122,7 +130,7 @@
 
               <!-- POST 2 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post2.html"
                     class="block-20"
@@ -135,7 +143,7 @@
                       <div>Eliza Nowakowska</div>
                     </div>
                     <h3 class="heading">
-                      <a href="blog/post2.html">Pasja – jak ją odnaleźć?</a>
+                      <a href="blog/post2.html" itemprop="headline">Pasja – jak ją odnaleźć?</a>
                     </h3>
                     <p>
                       W XXI wieku oglądając różnego rodzaju media, czy portale
@@ -150,7 +158,7 @@
 
               <!-- POST 1 -->
               <div class="col-md-12 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch d-md-flex">
+                <div class="blog-entry align-self-stretch d-md-flex" itemscope itemtype="https://schema.org/Blog">
                   <a
                     href="blog/post1.html"
                     class="block-20"
@@ -163,7 +171,7 @@
                       <div>Eliza Nowakowska</div>
                     </div>
                     <h3 class="heading">
-                      <a href="blog/post1.html">
+                      <a href="blog/post1.html" itemprop="headline">
                         Dodatkowe pieniądze – jak je znaleźć?</a
                       >
                     </h3>
@@ -344,8 +352,6 @@
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

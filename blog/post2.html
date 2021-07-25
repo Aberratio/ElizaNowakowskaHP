@@ -2,7 +2,7 @@
 <html lang="pl">
 
 <head>
-  <title>Eliza Nowakowska - Wirtualna Asystentka</title>
+  <title>Eliza Nowakowska - Post - Pasja – jak ją odnaleźć?</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
@@ -25,13 +25,13 @@
 
   <link rel="stylesheet" href="../css/flaticon.css" />
   <link rel="stylesheet" href="../css/icomoon.css" />
-  <link rel="stylesheet" href="../css/style.css?v=22" />
+  <link rel="stylesheet" href="../css/style.css?v=24" />
   <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
   
   <link rel="icon" href="../images/logo.png" />
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Blog">
   <nav class="
         navbar navbar-expand-lg navbar-dark
         bg-dark
@@ -40,7 +40,12 @@
         awake
       " id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">Eliza Nowakowska</a>
+			<a class="navbar-brand" href="index.html">
+				<img
+				  src="images/logo.png"
+				  alt="Logo"
+				  class="nav-logo"
+				/>Eliza Nowakowska</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
         aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span>
@@ -82,7 +87,7 @@
             justify-content-center
           ">
         <div class="col-md-9 ftco-animate pb-5 text-center">
-          <h2 class="mb-0 bread post-head">Pasja – jak ją odnaleźć?</h2>
+          <h1 class="mb-0 bread post-head" itemprop="headline">Pasja – jak ją odnaleźć?</h1>
           <p class="breadcrumbs">
             <span class="mr-2"><a href="../index.html">Główna <i class="ion-ios-arrow-round-forward"></i></a></span>
             <span class="mr-2"><a href="../blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span>
@@ -194,10 +199,13 @@
             <div class="bio">
               <img src="../images/21.jpg" alt="Image placeholder" class="img-fluid mb-4 img-author" />
             </div>
-            <div class="desc">
-              <h3>Eliza Nowakowska</h3>
+            <div class="desc" itemprop="editor" itemscope itemtype="https://schema.org/Person">
+              <h3><span itemprop="givenName">Eliza</span> <span itemprop="familyName">Nowakowska</span></h3>
               <p>
-                Wirtualna Asystentka, która z powodzeniem pomaga zaoszczędzić czas i pieniądze przedsiębiorcom. W życiu kieruje się mottem " Osobiste sukcesy bardzo mnie cieszą, jednak pomaganie innym daje mi poczucie spełnienia."
+                <span itemprop="jobTitle">Wirtualna Asystentka</span>, która z powodzeniem pomaga zaoszczędzić
+                czas i pieniądze przedsiębiorcom. W życiu kieruje się mottem "
+                Osobiste sukcesy bardzo mnie cieszą, jednak pomaganie innym
+                daje mi poczucie spełnienia."
               </p>
             </div>
           </div>
@@ -318,9 +326,6 @@
   <script src="../js/bootstrap-datepicker.js"></script>
   <script src="../js/jquery.timepicker.min.js"></script>
   <script src="../js/scrollax.min.js"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="../js/google-map.js"></script>
   <script src="../js/main.js"></script>
 </body>
 

@@ -29,7 +29,7 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
-	<link rel="stylesheet" href="css/style.css?v=22">
+	<link rel="stylesheet" href="css/style.css?v=24">
 	<link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/logo.png" />
@@ -44,7 +44,7 @@
 				<img
 				  src="images/logo.png"
 				  alt="Logo"
-				  style="width: 40px; height: 40px; margin-right: 10px; margin-bottom: 5px;"
+				  class="nav-logo"
 				/>Eliza Nowakowska</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +85,7 @@
 					</div>
 				</div>
 
-				<img src="images/rekomendacje.jpg" class="img-fluid mt-4">
+				<img src="images/rekomendacje.jpg" class="img-fluid mt-4" alt="its me">
 
 			</div>
 			<div class="web-main row no-gutters slider-text js-fullheight justify-content-center align-items-center">
@@ -111,9 +111,9 @@
 			<div class="row no-gutters">
 				<div class="col-xl-6 d-flex align-items-stretch py-4">
 					<div class="text-about py-5 px-1">
-						<h1 class="logo text-center">
+						<h3 class="logo text-center">
 							<a href="#">Eliza Nowakowska</a>
-						</h1>
+						</h3>
 						<h2 class="text-center">Wirtualna Asystentka</h2>
 						<p>
 							Jeśli...
@@ -523,13 +523,13 @@
 	</section>
 
 	<!-- CONTACT SECTION-->
-	<section class="ftco-section ftco-booking mb-5">
+	<section class="ftco-section ftco-booking mb-5" itemscope itemtype="https://schema.org/Person">
 		<div class="container ftco-relative">
 			<div class="row justify-content-center pb-3">
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<span class="subheading-light">Kontakt</span>
 					<h2 class="mb-4">Napisz do mnie</h2>
-					<p>Nie budujmy między sobą niepotrzebnych barier! </br> Nazywam się Eliza i będzie mi niezmiernie
+					<p>Nie budujmy między sobą niepotrzebnych barier! </br> Nazywam się <span itemprop="givenName">Eliza</span> i będzie mi niezmiernie
 						miło, jak będziesz zwracał się do mnie po imieniu.
 					</p>
 				</div>
@@ -537,7 +537,7 @@
 			<div class="row justify-content-center send-form-status">
 				<div id="send_form_status" class="text-center"></div>
 			</div>
-			<h3 class="vr">kontakt@elizanowakowska.com</h3>
+			<h3 class="vr" itemprop="email">kontakt@elizanowakowska.com</h3>
 			<div class="row justify-content-center">
 				<div class="col-md-10 ftco-animate">
 					<form method="post" action="send_form.php" class="contact_form" id="contact_form">
@@ -687,9 +687,6 @@
 	<script src="js/bootstrap-datepicker.js"></script>
 	<script src="js/jquery.timepicker.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
 	<script src="//static.rmt.pl/cache.ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/emailSender.js"></script>
