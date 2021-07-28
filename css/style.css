@@ -7841,7 +7841,7 @@ h1, h2, h3, h4, h5,
   padding: 0; }
   @media (max-width: 991.98px) {
     .ftco-navbar-light {
-      background: #303745 !important;
+      background: rgb(0, 0, 0) !important;
       position: relative;
       top: 0;
       padding: 10px 15px; } }
@@ -8047,7 +8047,7 @@ h1, h2, h3, h4, h5,
   }
   @media (max-width: 800px) {
     .hero-wrap-main {
-      background-color: #fff !important;
+      background-color: #000 !important;
     }
   }
   @media (max-width: 1199.98px) {
@@ -8477,6 +8477,7 @@ h3.vr {
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   .pricing-entry .price {
+    font-family: Roboto, Arial, sans-serif;
     margin-bottom: -10px !important;
     font-weight: 900;
     font-size: 28px;
@@ -8496,6 +8497,8 @@ h3.vr {
       color:rgb(0, 0, 0);
       padding: 10px 20px; }
       .pricing-entry ul li:nth-child(odd) {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 20px;
         color: white;
         background: #01b7ff; }
   .button {
@@ -8952,6 +8955,24 @@ textarea.form-control {
       .ftco-team .owl-dots .owl-dot.active {
         background: #01b7ff !important; }
 
+
+        @media (max-width: 992px) {
+        .ftco-footer {
+          text-align: center;
+        }
+        .ftco-footer ul li{
+          margin: auto;
+        }
+        .ftco-footer-widget {
+          padding: 0 50px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .ftco-footer-widget {
+          padding: 0 20px;
+        }
+      }
 .ftco-footer {
   font-size: 16px;
   background: #303745;
