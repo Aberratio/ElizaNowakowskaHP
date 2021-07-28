@@ -3073,6 +3073,7 @@ input[type="button"].btn-block {
   display: block; }
 
 .navbar {
+  font-family: "Spartan", sans-serif;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3113,6 +3114,7 @@ input[type="button"].btn-block {
     text-decoration: none; }
 
 .navbar-nav {
+  font-family: "Spartan", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8073,6 +8075,8 @@ h1, h2, h3, h4, h5,
 
 .web-main .subheading {
   color: #01b7ff !important;
+  font-family: "Spartan", sans-serif;
+  text-transform: none !important;
 }
 
 .slider-text {
@@ -8088,10 +8092,11 @@ h1, h2, h3, h4, h5,
     letter-spacing: 2px; }
   .slider-text h1 {
     font-size: 6vw;
-    font-family: 'Libre Baskerville', Arial, sans-serif;
+    font-family: "Spartan", sans-serif;
     text-transform: uppercase;
     line-height: 1.3;
-    font-weight: 700;
+    margin-top: 20px;
+    font-weight: 500;
     color: #fff; }
   .slider-text .breadcrumbs {
     font-size: 16px;
@@ -8146,6 +8151,10 @@ h1, h2, h3, h4, h5,
 .ftco-relative {
   position: relative; }
 
+  .mobileView {
+    display: none;
+  }
+
 h3.vr {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
@@ -8171,7 +8180,13 @@ h3.vr {
   @media (max-width: 1199.98px) {
     h3.vr {
       opacity: 0;
-      display: none; } }
+      display: none; } 
+    .mobileView {
+      display: block;
+      color: #01b7ff;  
+    }}
+
+
 
 .send-form-status {
   height: 40px; 
@@ -8934,11 +8949,14 @@ textarea.form-control {
   font-size: 16px;
   background: #303745;
   color: #01b7ff;
-  padding: 7em 0;
+  padding: 4em 0;
   z-index: 0; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
+    .ftco-footer .ftco-footer-widget ul {
+      margin-bottom: 50px;
+    }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
     color: #01b7ff;

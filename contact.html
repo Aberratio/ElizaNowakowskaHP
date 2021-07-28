@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre Baskerville&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Libre%20Baskerville&display=swap"
       rel="stylesheet"
     />
 
@@ -33,11 +33,14 @@
 
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css?v=24" />
-    <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=27" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="icon" href="images/logo.png" />
-</head>
+  </head>
   <body>
     <nav
       class="
@@ -51,11 +54,9 @@
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">
-          <img
-            src="images/logo.png"
-            alt="Logo"
-            class="nav-logo"
-          />Eliza Nowakowska</a>
+          <img src="images/logo.png" alt="Logo" class="nav-logo" />Eliza
+          Nowakowska</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -91,62 +92,98 @@
     </nav>
     <!-- END nav -->
 
-	<!-- CONTACT SECTION-->
-	<section class="ftco-section ftco-booking mb-5 mt-5">
-		<div class="container ftco-relative" itemscope itemtype="https://schema.org/Person">
-			<div class="row justify-content-center pb-3">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<span class="subheading-light">Kontakt</span>
-					<h1 class="mb-4">Napisz do mnie</h1>
-					<p>Nie budujmy między sobą niepotrzebnych barier! </br> Nazywam się <span itemprop="givenName">Eliza</span> i będzie mi niezmiernie
-						miło, jak będziesz zwracał się do mnie po imieniu.
-					</p>
-				</div>
-			</div>
-			<div class="row justify-content-center send-form-status">
-				<div id="send_form_status" class="text-center"></div>
-			</div>
-			<h3 class="vr" itemprop="email">kontakt@elizanowakowska.com</h3>
-			<div class="row justify-content-center">
-				<div class="col-md-10 ftco-animate">
-					<form method="post" action="send_form.php" class="contact_form" id="contact_form">
-						<div class="row">
-							<div class="col-sm-6">
-								<div class="form-group">
-									<input type="text" class="form-control" id="name" name="name" placeholder="Imię">
-								</div>
-							</div>
-							<div class="col-sm-6">
-								<div class="form-group">
-									<input type="text" class="form-control" id="email" name="email" placeholder="Email">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-group">
-									<textarea name="message" id="message" cols="30" rows="7" class="form-control"
-										placeholder="Wiadomość"></textarea>
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<i class="mt-2 small">
-									Wyrażam zgodę na przetwarzanie moich danych osobowych
-									podanych w formularzu kontaktowym zgodnie z
-									<a href="policy.html">polityką prywatności</a>.
-								</i>
-							</div>
-						</div>
-						<div class="form-group mt-3">
-							<p class="button text-center">
-								<input type="submit" value="Wyślij wiadomość" class="btn btn-primary px-4 py-3">
-							</p>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- CONTACT SECTION-->
+    <section class="ftco-section ftco-booking mb-5 mt-5">
+      <div
+        class="container ftco-relative"
+        itemscope
+        itemtype="https://schema.org/Person"
+      >
+        <div class="row justify-content-center pb-3">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+            <span class="subheading-light">Kontakt</span>
+            <h1 class="mb-4">Napisz do mnie</h1>
+            <p>
+              Nie budujmy między sobą niepotrzebnych barier! <br />
+              Nazywam się <span itemprop="givenName">Eliza</span> i będzie mi
+              niezmiernie miło, jak będziesz zwracał się do mnie po imieniu.
+            </p>
+          </div>
+        </div>
+        <h3 class="vr" itemprop="email">kontakt@elizanowakowska.com</h3>
+        <p class="mobileView text-center" itemprop="email">
+          kontakt@elizanowakowska.com
+        </p>
+        <div class="row justify-content-center">
+          <div class="col-md-10 ftco-animate">
+            <form
+              method="post"
+              action="send_form.php"
+              class="contact_form"
+              id="contact_form"
+            >
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Imię"
+                    />
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea
+                      name="message"
+                      id="message"
+                      cols="30"
+                      rows="7"
+                      class="form-control"
+                      placeholder="Wiadomość"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <i class="mt-2 small">
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych
+                    podanych w formularzu kontaktowym zgodnie z
+                    <a href="policy.html">polityką prywatności</a>.
+                  </i>
+                </div>
+              </div>
+              <div class="row justify-content-center send-form-status">
+                <div id="send_form_status" class="text-center"></div>
+              </div>
+              <div class="form-group mt-3">
+                <p class="button text-center">
+                  <input
+                    type="submit"
+                    value="Wyślij wiadomość"
+                    class="btn btn-primary px-4 py-3"
+                  />
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="ftco-footer ftco-section">
       <div class="container">
@@ -156,8 +193,9 @@
               <h2 class="ftco-heading-2">O mnie</h2>
               <p class="py-2">
                 Wirtualna Asystentka, która z powodzeniem pomaga zaoszczędzić
-                czas i pieniądze przedsiębiorcom. </br> W życiu kieruje się mottem: 
-              </br>
+                czas i pieniądze przedsiębiorcom. <br />
+                W życiu kieruje się mottem:
+                <br />
                 <i
                   >" Osobiste sukcesy bardzo mnie cieszą, jednak pomaganie innym
                   daje mi poczucie spełnienia."</i
@@ -170,9 +208,13 @@
               <h2 class="ftco-heading-2">Informacje</h2>
               <ul class="list-unstyled">
                 <li>
-                  <a href="policy.html" class="py-2 d-block">Polityka Prywatności</a>
+                  <a href="policy.html" class="py-2 d-block"
+                    >Polityka Prywatności</a
+                  >
                 </li>
-                <li><a href="regulations.html" class="py-2 d-block">Regulamin</a></li>
+                <li>
+                  <a href="regulations.html" class="py-2 d-block">Regulamin</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -196,7 +238,9 @@
                   <li>
                     <a href="#"
                       ><span class="icon icon-envelope"></span
-                      ><span class="text">&nbsp;kontakt@elizanowakowska.com</span></a
+                      ><span class="text"
+                        >&nbsp;kontakt@elizanowakowska.com</span
+                      ></a
                     >
                   </li>
                 </ul>
@@ -213,10 +257,14 @@
                 "
               >
                 <li class="ftco-animate">
-                  <a href="https://www.facebook.com/elizaanowakowska"><span class="icon-facebook"></span></a>
+                  <a href="https://www.facebook.com/elizaanowakowska"
+                    ><span class="icon-facebook"></span
+                  ></a>
                 </li>
                 <li class="ftco-animate">
-                  <a href="https://www.instagram.com/elizanowakowskapl/"><span class="icon-instagram"></span></a>
+                  <a href="https://www.instagram.com/elizanowakowskapl/"
+                    ><span class="icon-instagram"></span
+                  ></a>
                 </li>
               </ul>
             </div>
