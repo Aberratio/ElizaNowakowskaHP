@@ -1,3 +1,13 @@
 RewriteEngine on
+
+RewriteCond %{HTTP_HOST} !^elizanowakowska.com [NC]
+RewriteRule ^(.*)$ http://elizanowakowska.com%{REQUEST_URI} [R=301,L]
+
 RewriteCond %{THE_REQUEST} ^.*/index\.html 
 RewriteRule ^(.*)index\.html$ /$1 [R=301,L] 
+
+RewriteRule ^index.html$ https://www.elizanowakowska.com/$1 [R=301,L]
+RewriteRule ^index.php$ https://www.elizanowakowska.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^185\.255\.40\.36
+RewriteRule (.*) https://www.elizanowakowska.com/$1 [R=301,L]
