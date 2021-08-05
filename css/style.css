@@ -8046,7 +8046,7 @@ h1, h2, h3, h4, h5,
   }
   @media (max-width: 800px) {
     .hero-wrap-main {
-      background-color: #000 !important;
+      background-color: rgb(255, 255, 255) !important;
     }
   }
   @media (max-width: 1199.98px) {

@@ -11,3 +11,7 @@ RewriteRule ^index.php$ https://www.elizanowakowska.com/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^185\.255\.40\.36
 RewriteRule (.*) https://www.elizanowakowska.com/$1 [R=301,L]
+
+ #redirect /file.html to /file
+ RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+ RewriteRule ^ /%1 [NE,L,R]
